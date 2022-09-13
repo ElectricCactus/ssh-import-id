@@ -1,10 +1,11 @@
 {
   "private": true,
-  "name": "template-ts",
-  "version": "1.0.0",
-  "description": "Default template for TypeScript projects",
+  "name": "ssh-import-id",
+  "version": "0.0.0",
+  "description": "import your ssh keys",
   "scripts": {
-    "build": "esbuild src/index.ts --platform=node --bundle --outdir=dist",
+    "import": "ts-node src/index.ts",
+    "build": "esbuild src/index.ts --platform=node --bundle --outdir=dist --banner:js=\"#!/usr/bin/env node\"",
     "lint": "eslint src/ --ext .ts",
     "test": "jest",
     "tsc": "tsc --noEmit"

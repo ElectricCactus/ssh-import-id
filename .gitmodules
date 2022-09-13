@@ -1,0 +1,3 @@
+[submodule "modules/mini-http"]
+	path = modules/mini-http
+	url = https://github.com/ElectricCactus/mini-http
